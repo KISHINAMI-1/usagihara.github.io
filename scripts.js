@@ -1,5 +1,8 @@
 let currentSlide = 0;
-const slides = ["<img src="https://KISHINAMI-1.github.io/usagihara.github.io/images/01-01.png" alt="先生のイラスト">", "<img src="https://KISHINAMI-1.github.io/usagihara.github.io/images/IMG_0269.webp" alt="先生のイラスト">", "images/image3.jpg"];
+const slides = [
+    "https://KISHINAMI-1.github.io/usagihara.github.io/images/01-01.png",
+    "https://KISHINAMI-1.github.io/usagihara.github.io/images/IMG_0269.webp"
+];
 
 function showMainContent() {
     document.getElementById('ageCheck').style.display = 'none';
