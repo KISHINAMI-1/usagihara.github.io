@@ -4,19 +4,26 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;
+    width: 100%;
 }
 
 nav {
     display: flex;
     justify-content: center;
     background: #444;
+    width: 100%;
 }
 
 nav a {
@@ -30,7 +37,6 @@ main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    text-align: center;
 }
 
 footer {
@@ -38,6 +44,7 @@ footer {
     padding: 10px;
     background: #333;
     color: #fff;
+    width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -79,7 +86,7 @@ footer {
 #slideshow {
     position: relative;
     max-width: 100%;
-    margin: auto;
+    margin: 20px auto;
     text-align: center;
     overflow: hidden; /* Hide overflow */
 }
@@ -124,7 +131,6 @@ footer {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    text-align: center;
 }
 
 #homeContent h2, #homeContent p {
