@@ -10,6 +10,7 @@ function showMainContent() {
     mainContent.forEach(function(element) {
         element.style.display = 'block';
     });
+    document.getElementById('homeContent').style.display = 'none';
 }
 
 function denyAccess() {
@@ -19,6 +20,11 @@ function denyAccess() {
 function showHome() {
     document.getElementById('mainContent').style.display = 'none';
     document.getElementById('homeContent').style.display = 'block';
+}
+
+function backToMain() {
+    document.getElementById('mainContent').style.display = 'block';
+    document.getElementById('homeContent').style.display = 'none';
 }
 
 function prevSlide() {
