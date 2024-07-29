@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ウサギハナのホームページ</title>
+    <title>ウサギハナ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,18 +17,26 @@
         <h1>ウサギハナ</h1>
     </header>
     <nav id="mainContent" style="display: none;">
-        <a href="#home">ホーム</a>
+        <a href="#home" onclick="showHome()">ホーム</a>
         <a href="#services">サービス</a>
         <a href="#contact">お問い合わせ</a>
     </nav>
     <main id="mainContent" style="display: none;">
-        <h2>先生のイラスト</h2>
-        <img src="https://KISHINAMI-1.github.io/usagihara.github.io/images/01-01.png" alt="先生のイラスト">
-        <div>
-            <a href="https://skeb.jp/@usagihara1997" target="_blank">Skeb</a>
-            <a href="https://x.com/usagihara1997" target="_blank">X(元Twitter)</a>
+        <div id="slideshow">
+            <button class="slide-button" onclick="prevSlide()">&#10094;</button>
+            <img id="slide-image" src="images/image1.jpg" alt="スライド画像">
+            <button class="slide-button" onclick="nextSlide()">&#10095;</button>
         </div>
     </main>
+
+    <section id="homeContent" style="display: none;">
+        <h2>先生のリンク集</h2>
+        <p><a href="http://odaibako.net/u/usagihara1997" target="_blank">お題箱</a></p>
+        <p>お仕事の依頼は <a href="mailto:kuro1997831@gmail.com">kuro1997831@gmail.com</a></p>
+        <p><a href="http://skeb.jp/@usagihara1997" target="_blank">Skeb</a></p>
+        <p>AI学習🚫</p>
+    </section>
+
     <footer id="mainContent" style="display: none;">
         &copy; 2024 ウサギハナサイト. 全著作権所有。
     </footer>
