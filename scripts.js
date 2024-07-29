@@ -7,6 +7,7 @@ const slideDuration = 3000; // スライドの切り替え時間（ミリ秒）
 
 function showMainContent() {
     document.getElementById('ageCheck').style.display = 'none';
+    document.getElementById('displayedImage').style.filter = 'none';
     var mainContent = document.querySelectorAll('#mainContent');
     mainContent.forEach(function(element) {
         element.style.display = 'block';
@@ -54,3 +55,4 @@ function startSlideShow() {
 
 // 初期表示で年齢確認を表示
 document.getElementById('ageCheck').style.display = 'block';
+document.getElementById('displayedImage').style.filter = 'brightness(50%)';
