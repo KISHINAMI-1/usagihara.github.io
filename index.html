@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="ageCheck">
-        <div class="ageCheck-content">
-            <img id="displayedImage" src="https://KISHINAMI-1.github.io/usagihara.github.io/images/01-01.png" alt="Displayed Image">
-            <h2>年齢確認</h2>
-            <p>あなたは18歳以上ですか？</p>
-            <p>ここから先は、アダルト商品を扱うアダルトサイトとなります。<br>18歳未満の方のアクセスは固くお断りします。</p>
-            <div class="buttons">
-                <button onclick="showMainContent()">はい</button>
-                <button onclick="denyAccess()">いいえ</button>
+    <div id="mainContent">
+        <img id="displayedImage" src="https://KISHINAMI-1.github.io/usagihara.github.io/images/01-01.png" alt="Displayed Image">
+        <div id="ageCheck">
+            <div class="ageCheck-content">
+                <h2>年齢確認</h2>
+                <p>あなたは18歳以上ですか？</p>
+                <p>ここから先は、アダルト商品を扱うアダルトサイトとなります。<br>18歳未満の方のアクセスは固くお断りします。</p>
+                <div class="buttons">
+                    <button onclick="showMainContent()">はい</button>
+                    <button onclick="denyAccess()">いいえ</button>
+                </div>
             </div>
         </div>
     </div>
