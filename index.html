@@ -3,30 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ウェブサイトのタイトル</title>
+    <title>モダンなホームページ</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
-            background-image: url('01-01.png'); /* 背景画像のURLを指定 */
-            background-size: cover;
-            background-position: center;
+            padding: 0;
+            color: #333;
         }
-        #ageCheck, #mainContent {
-            display: none;
-            background-color: rgba(255, 255, 255, 0.9); /* 半透明の白い背景 */
+
+        header {
+            background: #333;
+            color: #fff;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+
+        /* レスポンシブデザイン */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+        }
+
+        #ageCheck, #mainContent {
+            display: none;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
         #ageCheck {
             display: block; /* 初期表示で年齢確認を表示 */
         }
+
         #ageCheck button, #mainContent a {
             margin: 10px;
             padding: 10px 20px;
@@ -38,10 +82,12 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         #mainContent a {
             display: inline-block;
             background-color: #28A745; /* 緑色のボタン */
         }
+
         #mainContent img {
             max-width: 100%;
             height: auto;
@@ -51,20 +97,33 @@
     </style>
 </head>
 <body>
-    <div id="ageCheck">
-        <h1>あなたは18歳以上ですか？</h1>
-        <button onclick="showMainContent()">はい</button>
-        <button onclick="denyAccess()">いいえ</button>
-    </div>
-
-    <div id="mainContent">
-        <h1>先生のイラスト</h1>
-        <img src="先生のイラストのURL" alt="先生のイラスト">
-        <div>
-            <a href="https://skeb.jp/@usagihara1997" target="_blank">Skeb</a>
-            <a href="https://x.com/usagihara1997" target="_blank">X(元Twitter)</a>
+    <header>
+        <h1>モダンなデザインのサイト</h1>
+    </header>
+    <nav>
+        <a href="#home">ホーム</a>
+        <a href="#services">サービス</a>
+        <a href="#contact">お問い合わせ</a>
+    </nav>
+    <main>
+        <div id="ageCheck">
+            <h1>あなたは18歳以上ですか？</h1>
+            <button onclick="showMainContent()">はい</button>
+            <button onclick="denyAccess()">いいえ</button>
         </div>
-    </div>
+
+        <div id="mainContent">
+            <h2>先生のイラスト</h2>
+            <img src="先生のイラストのURL" alt="先生のイラスト">
+            <div>
+                <a href="https://skeb.jp/@usagihara1997" target="_blank">Skeb</a>
+                <a href="https://x.com/usagihara1997" target="_blank">X(元Twitter)</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 モダンなサイト名. 全著作権所有。
+    </footer>
 
     <script>
         function showMainContent() {
@@ -78,4 +137,3 @@
     </script>
 </body>
 </html>
-
