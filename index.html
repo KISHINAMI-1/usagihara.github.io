@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>年齢確認</title>
+    <title>ウェブサイトのタイトル</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="mainContent">
-        <img id="displayedImage" src="https://KISHINAMI-1.github.io/usagihara.github.io/images/IMG_0270.jpeg" alt="Displayed Image">
-        <div id="ageCheck">
-            <div class="ageCheck-content">
-                <h2>年齢確認</h2>
-                <p>あなたは18歳以上ですか？</p>
-                <p>ここから先は、アダルト商品を扱うアダルトサイトとなります。<br>18歳未満の方のアクセスは固くお断りします。</p>
-                <div class="buttons">
-                    <button onclick="showMainContent()">はい</button>
-                    <button onclick="denyAccess()">いいえ</button>
-                </div>
+    <div id="ageCheck">
+        <div class="ageCheck-content">
+            <h2>年齢確認</h2>
+            <p>あなたは18歳以上ですか？</p>
+            <p>ここから先は、アダルト商品を扱うアダルトサイトとなります。<br>18歳未満の方のアクセスは固くお断りします。</p>
+            <div class="buttons">
+                <button onclick="showMainContent()">はい</button>
+                <button onclick="denyAccess()">いいえ</button>
             </div>
         </div>
+    </div>
+
+    <div id="mainContent">
+        <img id="displayedImage" src="https://KISHINAMI-1.github.io/usagihara.github.io/images/01-01.png" alt="Displayed Image">
+        <button class="nav-button" id="prevImage">前</button>
+        <button class="nav-button" id="nextImage">次</button>
     </div>
     
     <header id="mainContent" style="display: none;">
