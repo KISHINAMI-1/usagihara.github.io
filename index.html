@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ウェブサイトのタイトル</title>
+    <title>ウサギハラ線のウェブサイト</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- 年齢確認画面 -->
     <div id="ageCheck">
         <div class="ageCheck-content">
             <h2>年齢確認</h2>
@@ -19,27 +20,29 @@
         </div>
     </div>
 
+    <!-- メインコンテンツ -->
     <div id="mainContent">
-        <img id="displayedImage" src="https://KISHINAMI-1.github.io/usagihara.github.io/images/01-01.png" alt="Displayed Image">
-        <button class="nav-button" id="prevImage">前</button>
-        <button class="nav-button" id="nextImage">次</button>
+        <header>
+            <h1>ウサギハラ線</h1>
+        </header>
+        <nav>
+            <a href="#home" onclick="showHome()">ホーム</a>
+            <a href="#services">サービス</a>
+            <a href="#contact">お問い合わせ</a>
+        </nav>
+        <main>
+            <div id="slideshow">
+                <img id="displayedImage" src="https://KISHINAMI-1.github.io/usagihara.github.io/images/01-01.png" alt="Displayed Image">
+                <button class="nav-button" onclick="prevImage()">&#10094; 前</button>
+                <button class="nav-button" onclick="nextImage()">次 &#10095;</button>
+            </div>
+        </main>
+        <footer>
+            &copy; 2024 ウサギハラ線サイト. 全著作権所有。
+        </footer>
     </div>
-    
-    <header id="mainContent" style="display: none;">
-        <h1>ウサギハラ線</h1>
-    </header>
-    <nav id="mainContent" style="display: none;">
-        <a href="#home" onclick="showHome()">ホーム</a>
-        <a href="#services">サービス</a>
-        <a href="#contact">お問い合わせ</a>
-    </nav>
-    <main id="mainContent" style="display: none;">
-        <div id="slideshow">
-            <button class="slide-button" onclick="prevSlide()">&#10094;</button>
-            <button class="slide-button" onclick="nextSlide()">&#10095;</button>
-        </div>
-    </main>
 
+    <!-- ホームページ内容 -->
     <section id="homeContent" style="display: none;">
         <h2>先生のリンク集</h2>
         <p><a href="http://odaibako.net/u/usagihara1997" target="_blank">お題箱</a></p>
@@ -48,10 +51,6 @@
         <p>AI学習🚫</p>
         <button onclick="backToMain()">ホームページに戻る</button>
     </section>
-
-    <footer id="mainContent" style="display: none;">
-        &copy; 2024 ウサギハラ線サイト. 全著作権所有。
-    </footer>
 
     <script src="scripts.js"></script>
 </body>
