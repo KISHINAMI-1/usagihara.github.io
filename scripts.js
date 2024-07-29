@@ -8,10 +8,6 @@ const slideDuration = 3000; // スライドの切り替え時間（ミリ秒）
 function showMainContent() {
     document.getElementById('ageCheck').style.display = 'none';
     document.getElementById('mainContent').style.display = 'flex';
-    var mainContent = document.querySelectorAll('#mainContent');
-    mainContent.forEach(function(element) {
-        element.style.display = 'block';
-    });
     document.getElementById('homeContent').style.display = 'none';
     startSlideShow(); // スライドショーを開始
 }
@@ -26,7 +22,7 @@ function showHome() {
 }
 
 function backToMain() {
-    document.getElementById('mainContent').style.display = 'block';
+    document.getElementById('mainContent').style.display = 'flex';
     document.getElementById('homeContent').style.display = 'none';
 }
 
@@ -41,7 +37,7 @@ function nextSlide() {
 }
 
 function updateSlide() {
-    const img = document.getElementById('slide-image');
+    const img = document.getElementById('displayedImage');
     img.style.opacity = 0; // フェードアウト
     setTimeout(() => {
         img.src = slides[currentSlide];
@@ -53,14 +49,8 @@ function startSlideShow() {
     setInterval(nextSlide, slideDuration); // スライドショーを自動で切り替える
 }
 
-document.getElementById('prevImage').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.length) === 0 ? 0 : (currentIndex - 1 + images.length) % images.length;
-    document.getElementById('displayedImage').src = images[currentIndex];
-});
-document.getElementById('nextImage').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    document.getElementById('displayedImage').src = images[currentIndex];
-});
+document.getElementById('prevImage').addEventListener('click', prevSlide);
+document.getElementById('nextImage').addEventListener('click', nextSlide);
+
 // 初期表示で年齢確認を表示
 document.getElementById('ageCheck').style.display = 'block';
-
