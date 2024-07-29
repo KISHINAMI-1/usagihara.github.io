@@ -75,7 +75,7 @@ footer {
     background-image: url('https://KISHINAMI-1.github.io/usagihara.github.io/images/IMG_0270.jpeg'); /* 背景イラストのURLを指定 */
     background-size: cover;
     background-position: center;
-    width: 80%; /* 例: ダイアログの幅を画面の80% */
+    width: 50%; /* 例: ダイアログの幅を画面の80% */
     max-width: 600px; /* ダイアログの最大幅 */
     padding: 20px;
     border-radius: 10px;
