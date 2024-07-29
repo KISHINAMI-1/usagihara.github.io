@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ウサギハラのホームページ</title>
+    <title>年齢確認</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="ageCheck">
         <div class="ageCheck-content">
-            <h1>あなたは18歳以上ですか？</h1>
-            <button onclick="showMainContent()">はい</button>
-            <button onclick="denyAccess()">いいえ</button>
+            <h2>年齢確認</h2>
+            <p>あなたは18歳以上ですか？</p>
+            <p>ここから先は、アダルト商品を扱うアダルトサイトとなります。<br>18歳未満の方のアクセスは固くお断りします。</p>
+            <div class="buttons">
+                <button onclick="showMainContent()">はい</button>
+                <button onclick="denyAccess()">いいえ</button>
+            </div>
         </div>
     </div>
-
+    
     <header id="mainContent" style="display: none;">
         <h1>ウサギハラ線</h1>
     </header>
