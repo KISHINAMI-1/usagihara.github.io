@@ -52,32 +52,25 @@ footer {
 
 #ageCheck {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+    background-image: url('https://KISHINAMI-1.github.io/usagihara.github.io/images/IMG_0270.jpeg'); /* 背景イラストのURLを指定 */
+    background-size: cover;
+    background-position: center;
     z-index: 1000;
 }
 
-#ageCheck h1 {
-    margin-bottom: 20px;
-}
-
-#ageCheck button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.ageCheck-content {
+    background: rgba(255, 255, 255, 0.9); /* 半透明の白背景 */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #slideshow {

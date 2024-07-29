@@ -8,13 +8,15 @@
 </head>
 <body>
     <div id="ageCheck">
-        <h1>あなたは18歳以上ですか？</h1>
-        <button onclick="showMainContent()">はい</button>
-        <button onclick="denyAccess()">いいえ</button>
+        <div class="ageCheck-content">
+            <h1>あなたは18歳以上ですか？</h1>
+            <button onclick="showMainContent()">はい</button>
+            <button onclick="denyAccess()">いいえ</button>
+        </div>
     </div>
 
     <header id="mainContent" style="display: none;">
-        <h1>ウサギハナ</h1>
+        <h1>ウサギハナ線</h1>
     </header>
     <nav id="mainContent" style="display: none;">
         <a href="#home" onclick="showHome()">ホーム</a>
@@ -39,7 +41,7 @@
     </section>
 
     <footer id="mainContent" style="display: none;">
-        &copy; 2024 ウサギハナサイト. 全著作権所有。
+        &copy; 2024 ウサギハナ線サイト. 全著作権所有。
     </footer>
 
     <script src="scripts.js"></script>
