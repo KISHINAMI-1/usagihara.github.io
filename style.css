@@ -81,7 +81,7 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1001; /* ダイアログが背景イラストの上に表示されるようにする */
-    width: 80%; /* ダイアログの幅を画面の80% */
+    width: 20%; /* ダイアログの幅を画面の80% */
     max-width: 600px; /* ダイアログの最大幅 */
 }
 
