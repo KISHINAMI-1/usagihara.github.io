@@ -66,21 +66,22 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒背景 */
+    background-image: url('https://KISHINAMI-1.github.io/usagihara.github.io/images/IMG_0270.jpeg'); /* 背景イラストのURLを指定 */
+    background-size: cover;
+    background-position: center;
     z-index: 1000;
 }
 
 .ageCheck-content {
-    position: relative;
-    background-image: url('https://KISHINAMI-1.github.io/usagihara.github.io/images/IMG_0270.jpeg'); /* 背景イラストのURLを指定 */
-    background-size: cover;
-    background-position: center;
-    width: 50%; /* 例: ダイアログの幅を画面の80% */
-    max-width: 600px; /* ダイアログの最大幅 */
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明の白背景 */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1001; /* ダイアログが背景イラストの上に表示されるようにする */
+    width: 80%; /* ダイアログの幅を画面の80% */
+    max-width: 600px; /* ダイアログの最大幅 */
 }
 
 #slideshow {
