@@ -7,7 +7,7 @@ const slideDuration = 3000; // スライドの切り替え時間（ミリ秒）
 
 function showMainContent() {
     document.getElementById('ageCheck').style.display = 'none';
-    document.getElementById('displayedImage').style.filter = 'none';
+    document.getElementById('mainContent').style.display = 'flex';
     var mainContent = document.querySelectorAll('#mainContent');
     mainContent.forEach(function(element) {
         element.style.display = 'block';
@@ -53,6 +53,14 @@ function startSlideShow() {
     setInterval(nextSlide, slideDuration); // スライドショーを自動で切り替える
 }
 
+document.getElementById('prevImage').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) === 0 ? 0 : (currentIndex - 1 + images.length) % images.length;
+    document.getElementById('displayedImage').src = images[currentIndex];
+});
+document.getElementById('nextImage').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.getElementById('displayedImage').src = images[currentIndex];
+});
 // 初期表示で年齢確認を表示
 document.getElementById('ageCheck').style.display = 'block';
-document.getElementById('displayedImage').style.filter = 'brightness(50%)';
+
